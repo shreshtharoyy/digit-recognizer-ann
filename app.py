@@ -148,14 +148,3 @@ if predict_clicked:
             chart_data = {str(i): float(pred[0][i]) for i in range(10)}
             st.bar_chart(chart_data)
 
-# ──────────────────────────────────────────────────────────────
-# TIPS
-# ──────────────────────────────────────────────────────────────
-with st.expander("Tips for best accuracy"):
-    st.markdown("""
-- **Draw large** — fill most of the black canvas
-- **Center your digit** — MNIST digits are centered in the image  
-- **Draw at normal speed** — rushed thin strokes reduce accuracy
-- **One digit only** — the model expects a single digit per prediction
-- If confidence is low, click **Clear** and try again
-""")
